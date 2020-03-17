@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/id_lv"
+        android:layout_width="420dp"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/id_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rank: "
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/id_lv"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@+id/id_lv"
+        app:layout_constraintTop_toBottomOf="@+id/id_lv" />
+
+    <TextView
+        android:id="@+id/id_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Shot:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/id_lv"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="@+id/id_lv"
+        app:layout_constraintTop_toBottomOf="@+id/id_lv" />
+
+    <TextView
+        android:id="@+id/id_info"
+        android:layout_width="149dp"
+        android:layout_height="268dp"
+        android:scrollbars="vertical"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/id_lv"
+        app:layout_constraintEnd_toStartOf="@+id/id_info2"
+        app:layout_constraintStart_toEndOf="@+id/id_lv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/id_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Highlights"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/id_info"
+        app:layout_constraintStart_toStartOf="@+id/id_info"
+        app:layout_constraintTop_toTopOf="@+id/id_info"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <Button
+        android:id="@+id/id_webscrape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Web Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/id_play"
+        app:layout_constraintStart_toStartOf="@+id/id_play"
+        app:layout_constraintTop_toBottomOf="@+id/id_play" />
+
+    <TextView
+        android:id="@+id/id_info2"
+        android:layout_width="252dp"
+        android:layout_height="412dp"
+        android:scrollbars="vertical"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>
